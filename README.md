@@ -21,7 +21,6 @@ npm install @gustavotc95/react-multi-select-custom --registry=https://npm.pkg.gi
 ```jsx
 import React, { useState } from "react";
 import MultiSelect from "react-multi-select-custom";
-import "react-multi-select-custom/dist/style.css";
 
 const options = [
   { id: "1", name: "Option 1" },
