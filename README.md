@@ -21,6 +21,7 @@ npm install @gustavotc95/react-multi-select-custom --registry=https://npm.pkg.gi
 ```jsx
 import React, { useState } from "react";
 import MultiSelect from "react-multi-select-custom";
+import "react-multi-select-custom/dist/style.css";
 
 const options = [
   { id: "1", name: "Option 1" },
@@ -54,11 +55,3 @@ export default App;
 | `onChange`       | `(selected: string[]) => void` | Função chamada quando a seleção é alterada. |
 | `label`          | `string`                       | Rótulo do campo de seleção múltipla.        |
 | `id`             | `string`                       | ID do campo de seleção múltipla.            |
-
-## Estilos
-
-Certifique-se de importar o arquivo CSS para aplicar os estilos ao componente:
-
-```jsx
-import "react-multi-select-custom/dist/style.css";
-```

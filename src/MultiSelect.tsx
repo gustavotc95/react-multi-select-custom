@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./style.css";
+import "./MultiSelect.css";
 
 interface Option {
   id: string | number;

@@ -1,11 +1,11 @@
 {
   "name": "react-multi-select-custom",
-  "version": "1.0.3",
+  "version": "1.1.7",
   "main": "dist/MultiSelect.js",
   "module": "dist/MultiSelect.js",
   "types": "dist/MultiSelect.d.ts",
   "scripts": {
-    "build": "esbuild src/MultiSelect.tsx --bundle --outfile=dist/MultiSelect.js --loader:.css=text --target=es2015",
+    "build": "node esbuild.config.js",
     "prepublishOnly": "npm run build",
     "publish:github": "npm publish --registry=https://npm.pkg.github.com"
   },
@@ -20,7 +20,16 @@
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "typescript": "^4.0.0",
-    "esbuild": "^0.14.0"
+    "esbuild": "^0.14.0",
+    "esbuild-css-modules-plugin": "^2.7.1",
+    "esbuild-plugin-inline-css": "^0.0.1",
+    "esbuild-style-plugin": "^1.6.3",
+    "typescript": "^4.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/MultiSelect.js",
+      "require": "./dist/MultiSelect.js"
+    }
   }
 }
