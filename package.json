@@ -1,6 +1,6 @@
 {
   "name": "react-multi-select-custom",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "main": "dist/MultiSelect.js",
   "module": "dist/MultiSelect.js",
   "types": "dist/MultiSelect.d.ts",
