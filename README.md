@@ -2,6 +2,8 @@
 
 Um componente de seleção múltipla para React.
 
+https://github.com/user-attachments/assets/bb8d83b3-e5e3-4931-8c43-5ca7171e06e9
+
 ## Instalação
 
 ### npm
@@ -21,7 +23,6 @@ npm install @gustavotc95/react-multi-select-custom --registry=https://npm.pkg.gi
 ```jsx
 import React, { useState } from "react";
 import MultiSelect from "react-multi-select-custom";
-import "react-multi-select-custom/dist/style.css";
 
 const options = [
   { id: "1", name: "Option 1" },
